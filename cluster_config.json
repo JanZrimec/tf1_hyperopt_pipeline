@@ -1,0 +1,16 @@
+{
+"__default__" : {
+        "account" : "C3SE2022-1-14",
+        "time" : "0-6:00",
+        "n" : 2,
+        "partition" : "batch",
+        "mail-type" : "END,FAIL",
+        "mail-user" : "$USER@chalmers.se"
+},
+
+"#documenation": {
+        "#A": "----------------------------------------------------------------------------------",
+        "#raw_cmdline": "Use with: nohup snakemake -j 199 --cluster-config cluster_config.json --cluster \"sbatch  -A {cluster.account} -p {cluster.partition} -t {cluster.time} -n {cluster.n}\" &",
+        "#Z": "----------------------------------------------------------------------------------"
+},
+}

@@ -1,0 +1,18 @@
+experiment_name: _run_hyperas_scerevisiae_promCF
+input_files:
+  models:
+    Model_C3F2all: models/Model_C3F2varsCF.py
+  datasets:
+    scerevisiae_good_rsd1_lmbda22:
+      file: data/scerevisiae.rsd1.lmbda_22.1000.npz
+
+  #app specific of application
+  app: "optimize_model.py"
+  hparam_config: "params.yml"
+  optimizer_iterations: 1500
+  multi_gpu: 1
+params:
+  #replicates
+  replicate_seed: [1234]
+  random_seed: 1120
+  one_job: 1
